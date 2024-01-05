@@ -1,0 +1,37 @@
+//Assessment #4
+//1. Create a class component and show all the life cycle hooks
+
+
+//2. Make a state change, the state should be duplicate and then stop it to call render method to improve efficiency.
+
+
+
+//3. Create a product component using functional component and hooks (try using use state to read default values from reducer)
+
+
+// 	 Create a form to allow user to submit Product Details - name, price, desc, rating
+
+// 	 Create an action method to add the detail to database using a server api
+
+// 	 Server Side - Create product router and api to save the product using productdatamodel
+
+
+
+
+//4. Create a route and navigation to show product component
+
+
+
+//5. Explain various hooks in functional component (at least 5)
+
+const [state1, setState1] = useState("")  -->  This sets the var state1 to "" (empty str) and provides us a setter for state1
+const nameRef = useRef()  -->  This provides us a reference that we can pass to various elements (input) which allows us to
+                               manipulate/maintain the value associated with the element
+const navigate = useNavigate()
+    navigate('/')               --> This is a hook from react-router-dom that allows us to naviagte to a specific route, in this case root.
+
+useEffect(()=>{
+    //do things   -->  The useEffect hook allows us to run a function whenever something from the dependencyList changes. If list empty, 
+}, [])                 only runs once after first render
+
+let params = useParams()  -->  Allows us to access URL Request Params
